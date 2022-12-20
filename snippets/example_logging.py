@@ -3,8 +3,12 @@
 import sys
 import logging
 
-# Change Logging package's configurations
-logging.basicConfig(filename='example_logging.log',level=logging.DEBUG)
+# Import Module
+import example_logging_module
+
+# Change root logger's configurations
+logging.basicConfig(filename='example_logging.log',level=logging.DEBUG, 
+                    format='%(asctime)s:%(filename)s:%(funcName)s:%(name)s:%(levelname)s:%(message)s')
 
 def add_ints(x: int = 0,y: int = 0) -> int:
     """ Add two numbers. """

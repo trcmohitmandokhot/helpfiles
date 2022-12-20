@@ -53,5 +53,18 @@ Other tips.
 1. Classes Structure. Corey Schafer videos that outline Object Oriented Programming with Python. 
 2. Error Handling.  Corey Schafer Videos [here](https://www.youtube.com/watch?v=NIWwJbo-9_8)
 3. Type Hinting. Tech with Tim Videos [here](https://www.youtube.com/watch?v=QORvB-_mbZ0)
-4. Logging 
-5. Tests / Unit Testing? 
+
+5. Tests / Unit Testing?
+
+### Logging
+Two Corey Schafer's Logging Videos are good.  
+[Logging_Basics](https://www.youtube.com/watch?v=-ARI4Cz-awo&t=0s)  
+[Logging_Advanced](https://www.youtube.com/watch?v=jxmzY9soFXg)  
+
+Key takeaways:  
+- Module and submodule may print out different logs.
+- This can enable maintenance of different log files.  
+
+Code snippet reference is here:  
+- [example_logging.py](snippets/example_logging.py)
+- [example_logging_module.py](snippets/example_logging_module.py)

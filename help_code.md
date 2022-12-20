@@ -1,6 +1,6 @@
-Common code tips used. 
+# CODE TIPS
 
-# GIT
+## GIT
 
 [Git CheatSheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
@@ -11,8 +11,8 @@ git merge main
 git push
 ```
 
-# Project Repository Structure for GUI Apps
-
+## Project Repository Structure 
+### GUI Apps
 TodoApp
 - .gitignore
 - LICENSE
@@ -48,3 +48,10 @@ This data structure is inspired from the following references:
 Other tips.
 1. Use absolute imports only.  
 2. Add author and version information in app.py 
+
+## Python Techniques
+1. Classes Structure. Corey Schafer videos that outline Object Oriented Programming with Python. 
+2. Error Handling.  Corey Schafer Videos [here](https://www.youtube.com/watch?v=NIWwJbo-9_8)
+3. Type Hinting. Tech with Tim Videos [here](https://www.youtube.com/watch?v=QORvB-_mbZ0)
+4. Logging 
+5. Tests / Unit Testing? 

@@ -66,7 +66,8 @@ Other tips.
 2. Error Handling.  Corey Schafer Videos [here](https://www.youtube.com/watch?v=NIWwJbo-9_8)
 3. Type Hinting. Tech with Tim Videos [here](https://www.youtube.com/watch?v=QORvB-_mbZ0)
 
-4. Tests / Unit Testing?
+4. Tests / Unit Testing?  
+Pandas has their own testing module. [pandas.testing.assert_frame_equal](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.testing.assert_frame_equal.html) 
 
 ### Logging
 Two Corey Schafer's Logging Videos are good.  

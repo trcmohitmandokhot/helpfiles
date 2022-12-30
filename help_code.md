@@ -11,6 +11,18 @@ git merge main
 git push
 ```
 
+**Delete local and remote branch**
+```
+git branch -d local
+git push origin -d local
+```
+
+**Checkout Local and Push to Remote**
+```
+git checkout -b local
+git push --set-upstream origin local
+```
+
 ## Project Repository Structure 
 ### GUI Apps
 TodoApp
@@ -54,7 +66,7 @@ Other tips.
 2. Error Handling.  Corey Schafer Videos [here](https://www.youtube.com/watch?v=NIWwJbo-9_8)
 3. Type Hinting. Tech with Tim Videos [here](https://www.youtube.com/watch?v=QORvB-_mbZ0)
 
-5. Tests / Unit Testing?
+4. Tests / Unit Testing?
 
 ### Logging
 Two Corey Schafer's Logging Videos are good.  
@@ -68,3 +80,6 @@ Key takeaways:
 Code snippet reference is here:  
 - [example_logging.py](snippets/example_logging.py)
 - [example_logging_module.py](snippets/example_logging_module.py)
+
+## Software Architecture and UML Diagrams
+How much should one learn to communicate in UML? 

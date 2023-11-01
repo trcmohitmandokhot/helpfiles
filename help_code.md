@@ -21,8 +21,15 @@ git push origin -d local
 ```
 git checkout -b local
 git push --set-upstream origin local
-```
+```  
 
+**Submodules**  
+References:  
+1. [This](https://dev.to/jjokah/submodules-a-git-repo-inside-a-git-repo-36l9) article explains submodules.  
+2. [This]() git-scm book chapter provides a great reference manual.  
+3. [autoware.repos](https://github.com/autowarefoundation/autoware/blob/main/autoware.repos) Autoware-AI manages submodules using a *.repos YAML configuration file.  
+4. [vcstools](https://github.com/dirk-thomas/vcstool) To work with the YAML configuration file you need to install *vcstool* to manage submodules.  
+ 
 ## Project Repository Structure 
 ### GUI Apps
 TodoApp
@@ -84,3 +91,36 @@ Code snippet reference is here:
 
 ## Software Architecture and UML Diagrams
 How much should one learn to communicate in UML? 
+
+## Website Hosting on EC2 
+How to host a Jekyll Website on AWS EC2 using NGINX?  
+https://romainstrock.com/blog/static-website-nginx-ec2.html  
+How to add authentication to NGINX webserver.  
+https://www.youtube.com/watch?v=_zoDkXyXrx4  
+How to buy a domain and configure DNS records using Route53.  
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html  
+How to attach your EC2 instance to the domain.  
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-ec2-instance.html  
+How to convert http website to 
+
+## Website Workflow.  
+
+### Website Development Frameworks.  
+1. Use Jekyll for Static Websites.  
+    - MkDocs is a variant of this.  
+    - Use a lot of advanced templates to make this easy. Nice features exist.  
+
+2. Python Flask for Web Apps. This is still in draft mode.  
+
+### Pipeline to Host.  
+1. Hosting on S3 in a public bucket.  
+    - Not https. 
+    - Bucket content not private.  
+2. Hosting on S3 using Cloudfront.  
+    - Adds https functionality.  
+    - Bucket content can be held private.  
+    - Can attach a git based AWS code pipeline to publish to S3. 
+    - Distribution takes place through cloudfront, which makes availability high.  
+3. Hosting on AWS EC2 webserver with NGINX and Basic Authentication.  
+    - Can be full fledged private website with domain and authentication.  
+    - Server content can be locked inside a SSH limited access.  

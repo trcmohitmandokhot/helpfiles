@@ -29,6 +29,13 @@ References:
 2. [This]() git-scm book chapter provides a great reference manual.  
 3. [autoware.repos](https://github.com/autowarefoundation/autoware/blob/main/autoware.repos) Autoware-AI manages submodules using a *.repos YAML configuration file.  
 4. [vcstools](https://github.com/dirk-thomas/vcstool) To work with the YAML configuration file you need to install *vcstool* to manage submodules.  
+
+## Clean Code Workflow  
+Ref - https://pybit.es/articles/tips-for-clean-code-in-python/  
+Flake8 PEP Checker - https://flake8.pycqa.org/en/latest/index.html  
+Black Python Code Reformatter - https://black.readthedocs.io/en/stable/  
+mypy - https://mypy-lang.org/  
+pre-commit - https://pre-commit.com/#intro  
  
 ## Project Repository Structure 
 ### GUI Apps

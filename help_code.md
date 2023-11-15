@@ -128,6 +128,11 @@ How to convert http website to
     - Bucket content can be held private.  
     - Can attach a git based AWS code pipeline to publish to S3. 
     - Distribution takes place through cloudfront, which makes availability high.  
+Ref - [https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#create-oac-overview-s3](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#create-oac-overview-s3)  
+[Getting-Started-Simple-Distribution](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.SimpleDistribution.html)  
+  
+
+
 3. Hosting on AWS EC2 webserver with NGINX and Basic Authentication.  
     - Can be full fledged private website with domain and authentication.  
     - Server content can be locked inside a SSH limited access.  

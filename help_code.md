@@ -117,7 +117,37 @@ How to convert http website to
     - MkDocs is a variant of this.  
     - Use a lot of advanced templates to make this easy. Nice features exist.  
 
-2. Python Flask for Web Apps. This is still in draft mode.  
+2. Python Flask for Web Apps. This is still in draft mode. 
+    - Create a Flask Web-App 
+    - Fire-up a Ubuntu Server
+    - Create a Python Virtual Environment venv is fine. Miniconda3 does not work.  
+    ``` 
+    python3 -m venv flask_www
+    ```
+    - Install gunicorn, flask, pandas
+    ``` 
+    python3 -m pip install gunicorn flask==2.2.2 Werkzeug==2.2.2 pandas flask_wtf
+    ```
+    - Create a test browser w3m. Navigate to app in flask test server.  
+    - Setup [gunicorn](https://flask.palletsprojects.com/en/2.3.x/deploying/gunicorn/) to serve flask app
+    ```
+        gunicorn -w 2 zipcode:app_var
+        # Access via
+        w3m http://127.0.0.1:8000/search
+    ```
+    - Automatically run the gunicorn server by using a "supervisor" tool and it's configuration file.  
+    ```
+        [program:zipcode]
+        command=/home/ubuntu/zipcode-webapp/flask_www/bin/gunicorn -w 2 zipcode:app_var
+        directory=/home/ubuntu/zipcode-webapp
+        user=ubuntu
+        autostart=true
+        autorestart=true
+        stopasgroup=true
+        killasgroup=true                    
+    ```
+    - Setup NGINX as a reverse proxy to gunicorn.  
+    
 
 ### Pipeline to Host.  
 1. Hosting on S3 in a public bucket.  
